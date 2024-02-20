@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://8c57g5fd0atk"]
+[gd_scene load_steps=3 format=3 uid="uid://8c57g5fd0atk"]
 
-[ext_resource type="Texture2D" uid="uid://cwpv8mpndow8a" path="res://Assets/Background/test_BG.png" id="1_pfm3v"]
 [ext_resource type="Texture2D" uid="uid://f2inldkopin4" path="res://Assets/jade_warplanets.png" id="2_eghj3"]
 [ext_resource type="Theme" uid="uid://be0dfqjy68pdg" path="res://ProjectSeedling_Theme.tres" id="3_r7ayg"]
 
@@ -11,15 +10,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="BG" type="TextureRect" parent="."]
-modulate = Color(0.501961, 0.501961, 0.501961, 1)
-custom_minimum_size = Vector2(1024, 600)
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 89.0
-texture = ExtResource("1_pfm3v")
-stretch_mode = 6
 
 [node name="Jade" type="TextureRect" parent="."]
 layout_mode = 1
@@ -37,7 +27,7 @@ layout_mode = 1
 offset_right = 150.0
 offset_bottom = 75.0
 theme = ExtResource("3_r7ayg")
-text = "NATION PANEL"
+text = "NATION"
 
 [node name="City_Name" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 100)
