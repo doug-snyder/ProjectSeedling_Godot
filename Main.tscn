@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://8c57g5fd0atk"]
 
-[ext_resource type="Texture2D" uid="uid://f2inldkopin4" path="res://Assets/jade_warplanets.png" id="2_eghj3"]
-[ext_resource type="Theme" uid="uid://be0dfqjy68pdg" path="res://ProjectSeedling_Theme.tres" id="3_r7ayg"]
+[ext_resource type="Texture2D" uid="uid://f2inldkopin4" path="res://Assets/jade_warplanets.png" id="1_4h7jk"]
+[ext_resource type="Theme" uid="uid://be0dfqjy68pdg" path="res://ProjectSeedling_Theme.tres" id="2_4do65"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -19,14 +19,14 @@ anchor_bottom = 1.0
 offset_top = -445.0
 offset_right = 590.0
 grow_vertical = 0
-texture = ExtResource("2_eghj3")
+texture = ExtResource("1_4h7jk")
 
 [node name="Nation_Panel" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 1
 offset_right = 150.0
 offset_bottom = 75.0
-theme = ExtResource("3_r7ayg")
+theme = ExtResource("2_4do65")
 text = "NATION"
 
 [node name="City_Name" type="Button" parent="."]
@@ -38,7 +38,7 @@ anchor_right = 1.0
 offset_left = -150.0
 offset_bottom = 75.0
 grow_horizontal = 0
-theme = ExtResource("3_r7ayg")
+theme = ExtResource("2_4do65")
 text = "City Name"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -58,7 +58,7 @@ alignment = 2
 [node name="Social_Panel" type="Button" parent="HBoxContainer"]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
-theme = ExtResource("3_r7ayg")
+theme = ExtResource("2_4do65")
 text = "FRIENDS & PMs
 LORE
 "
@@ -66,12 +66,12 @@ LORE
 [node name="City_Management" type="Button" parent="HBoxContainer"]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
-theme = ExtResource("3_r7ayg")
+theme = ExtResource("2_4do65")
 text = "CITY
 MANAGEMENT"
 
 [node name="News_Panel" type="Button" parent="HBoxContainer"]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
-theme = ExtResource("3_r7ayg")
+theme = ExtResource("2_4do65")
 text = "NEWS & CHAT"
