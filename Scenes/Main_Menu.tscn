@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://8c57g5fd0atk"]
 
-[ext_resource type="Script" path="res://Scripts/PlayerData.cs" id="1_g2kx5"]
+[ext_resource type="Script" path="res://Scripts/Main_Menu.cs" id="1_w86os"]
 [ext_resource type="Texture2D" uid="uid://f2inldkopin4" path="res://Assets/jade_warplanets.png" id="2_mfct5"]
 [ext_resource type="Theme" uid="uid://be0dfqjy68pdg" path="res://ProjectSeedling_Theme.tres" id="3_odgdn"]
 
@@ -11,10 +11,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_g2kx5")
+script = ExtResource("1_w86os")
 
 [node name="Jade" type="TextureRect" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0

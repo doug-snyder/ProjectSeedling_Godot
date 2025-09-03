@@ -1,24 +1,24 @@
 using Godot;
 using System;
 
-public partial class PlayerData : ConfigFile
+public partial class PlayerData : Node
 {
 	static ConfigFile config = new ConfigFile();
 
 	static void CreatePlayerData()
 	{
-		config.SetValue("Player", "PlayerName", "Rock Person");
+		config.SetValue("Player", "PlayerName", "Boulder Daddy");
 		config.SetValue("Nation", "NationName", "Planet Rock");
-		config.SetValue("Nation", "NationRulerName", "Ruler of Planet Rock");
+		config.SetValue("Nation", "NationRulerName", "Jade");
 		config.SetValue("Nation", "NationPower", 9001);
 
-		config.Save("user://PlayerData.config");
+		config.Save("user://PlayerData.cfg");
 	}
 
 	// Accept a Dictionary or return a Dictionary?
 	static void LoadPlayerData()
 	{
-		Error loadPlayerDataError = config.Load("user://PlayerData.config");
+		Error loadPlayerDataError = config.Load("user://PlayerData.cfg");
 		if (loadPlayerDataError != Error.Ok) { return; }
 
 		foreach (String section in config.GetSections())
@@ -33,6 +33,6 @@ public partial class PlayerData : ConfigFile
 
 	static void SavePlayerData()
 	{
-		config.Save("user://PlayerData.config");
+		config.Save("user://PlayerData.cfg");
 	}
 }
