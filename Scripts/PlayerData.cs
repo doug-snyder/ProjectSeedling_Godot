@@ -3,7 +3,7 @@ using System;
 
 public partial class PlayerData : ConfigFile
 {
-	ConfigFile config = new ConfigFile();
+	static ConfigFile config = new ConfigFile();
 
 	static void CreatePlayerData()
 	{
@@ -12,13 +12,13 @@ public partial class PlayerData : ConfigFile
 		config.SetValue("Nation", "NationRulerName", "Ruler of Planet Rock");
 		config.SetValue("Nation", "NationPower", 9001);
 
-		config.Save("user://PlayerData.cfg");
+		config.Save("user://PlayerData.config");
 	}
 
 	// Accept a Dictionary or return a Dictionary?
 	static void LoadPlayerData()
 	{
-		Error loadPlayerDataError = config.Load("user://PlayerData.cfg");
+		Error loadPlayerDataError = config.Load("user://PlayerData.config");
 		if (loadPlayerDataError != Error.Ok) { return; }
 
 		foreach (String section in config.GetSections())
@@ -33,6 +33,6 @@ public partial class PlayerData : ConfigFile
 
 	static void SavePlayerData()
 	{
-		config.Save("user://PlayerData.cfg");
+		config.Save("user://PlayerData.config");
 	}
 }
