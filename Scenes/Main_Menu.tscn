@@ -43,37 +43,37 @@ grow_horizontal = 0
 theme = ExtResource("3_odgdn")
 text = "City Name"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -458.0
-offset_top = -75.0
-grow_horizontal = 0
-grow_vertical = 0
-theme_override_constants/separation = 20
-alignment = 2
-
-[node name="Social_Panel" type="Button" parent="HBoxContainer"]
+[node name="Social_Panel" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 100)
-layout_mode = 2
+layout_mode = 0
+offset_left = 270.0
+offset_top = 500.0
+offset_right = 470.0
+offset_bottom = 600.0
 theme = ExtResource("3_odgdn")
 text = "FRIENDS & PMs
 LORE
 "
 
-[node name="City_Management" type="Button" parent="HBoxContainer"]
+[node name="City_Management" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 100)
-layout_mode = 2
+layout_mode = 0
+offset_left = 546.0
+offset_top = 500.0
+offset_right = 746.0
+offset_bottom = 600.0
 theme = ExtResource("3_odgdn")
 text = "CITY
 MANAGEMENT"
 
-[node name="News_Panel" type="Button" parent="HBoxContainer"]
+[node name="News_Panel" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 100)
-layout_mode = 2
+layout_mode = 0
+offset_left = 824.0
+offset_top = 500.0
+offset_right = 1024.0
+offset_bottom = 600.0
 theme = ExtResource("3_odgdn")
 text = "NEWS & CHAT"
+
+[connection signal="pressed" from="Nation_Panel" to="." method="_on_nation_panel_pressed"]
