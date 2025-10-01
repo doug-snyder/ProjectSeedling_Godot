@@ -75,5 +75,3 @@ offset_right = 1024.0
 offset_bottom = 600.0
 theme = ExtResource("3_odgdn")
 text = "NEWS & CHAT"
-
-[connection signal="pressed" from="Nation_Panel" to="." method="_on_nation_panel_pressed"]
