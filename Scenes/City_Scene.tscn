@@ -10,3 +10,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_g70u1")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 306.0
+offset_top = 174.0
+offset_right = 667.0
+offset_bottom = 384.0
