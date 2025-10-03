@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dvvcj8v362miw"]
 
-[ext_resource type="Script" uid="uid://dj4pfwsqikcbs" path="res://Scripts/Social.cs" id="1_ofb57"]
+[ext_resource type="Script" uid="uid://dj4pfwsqikcbs" path="res://Scripts/Scene/Social.cs" id="1_ofb57"]
 
 [node name="SocialScene" type="Control"]
 layout_mode = 3

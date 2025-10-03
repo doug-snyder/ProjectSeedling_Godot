@@ -9,11 +9,11 @@ public partial class Main_Menu : Control
 	Button managementButton;
 	Button newsButton;
 
-	PackedScene nationScene = GD.Load<PackedScene>("res://Scenes/Nation_Scene.tscn");
-	PackedScene cityScene = GD.Load<PackedScene>("res://Scenes/City_Scene.tscn");
-	PackedScene socialScene = GD.Load<PackedScene>("res://Scenes/Social_Scene.tscn");
-	PackedScene managementScene = GD.Load<PackedScene>("res://Scenes/Management_Scene.tscn");
-	PackedScene newsScene = GD.Load<PackedScene>("res://Scenes/News_Scene.tscn");
+	PackedScene nationScreen = GD.Load<PackedScene>("res://Scenes/Screens/Nation_Screen.tscn");
+	PackedScene cityScreen = GD.Load<PackedScene>("res://Scenes/Screens/City_Screen.tscn");
+	PackedScene socialScreen = GD.Load<PackedScene>("res://Scenes/Screens/Social_Screen.tscn");
+	PackedScene managementScreen = GD.Load<PackedScene>("res://Scenes/Screens/Management_Screen.tscn");
+	PackedScene newsScreen = GD.Load<PackedScene>("res://Scenes/Screens/News_Screen.tscn");
 
 	public override void _Ready()
 	{
@@ -40,31 +40,31 @@ public partial class Main_Menu : Control
 
 	private void nationButtonPressed() {
 		GD.Print("Nation Button Pressed");
-		var nationInstance = nationScene.Instantiate();
+		var nationInstance = nationScreen.Instantiate();
 		AddChild(nationInstance);
 	}
 
 	private void cityButtonPressed() {
 		GD.Print("City Button Pressed");
-		var cityInstance = cityScene.Instantiate();
+		var cityInstance = cityScreen.Instantiate();
 		AddChild(cityInstance);
 	}
 
 	private void socialButtonPressed() {
 		GD.Print("Social Button Pressed");
-		var socialInstance = socialScene.Instantiate();
+		var socialInstance = socialScreen.Instantiate();
 		AddChild(socialInstance);
 	}
 
 	private void managementButtonPressed() {
 		GD.Print("Management Button Pressed");
-		var managementInstance = managementScene.Instantiate();
+		var managementInstance = managementScreen.Instantiate();
 		AddChild(managementInstance);
 	}
 
 	private void newsButtonPressed() {
 		GD.Print("News Button Pressed");
-		var newsInstance = newsScene.Instantiate();
+		var newsInstance = newsScreen.Instantiate();
 		AddChild(newsInstance);
 	}
 

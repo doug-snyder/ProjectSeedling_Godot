@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bccmj2fytaad6"]
 
-[ext_resource type="Script" uid="uid://bowyf5gwnpkb5" path="res://Scripts/News.cs" id="1_40ejf"]
+[ext_resource type="Script" uid="uid://bowyf5gwnpkb5" path="res://Scripts/Scene/News.cs" id="1_40ejf"]
 
 [node name="NewsScene" type="Control"]
 layout_mode = 3
